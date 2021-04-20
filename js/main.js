@@ -5,29 +5,28 @@ the list and checks that the current name is in the string passed in. The output
 // let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
 // let dog_names = ["Max","HAS","PuRple","dog"]
 
-// function findWords(){
-    //Your code goes here
-}
-
-// //Call method here with parameters
 
     let dog_string = "Hello Max, my name is Dog, and I have purple eyes!"
     let dog_names = ["Max","HAS","PuRple","dog"]
 
-    function findWords(){
-        for(let i = 0; i < dog_names.length; i++){
-            if(dog_string[0].search)
+    let findWords = (dog_string, dog_list) => {
+        let d_string = thestring.toLowerCase().split(/[ ,]+/)
+        let d_names = thelist.map(i => i.toLowerCase())
+        let match = []
+
+        for(let i = 0; i < d_names.length; i++) {
+            if (d_string.includes(d_names[i] )) {
+                matches.push(d_names[i])
+            }
         }
-        
-        
+
+        if (match.length == 0 ) {
+            console.log('No Matches')
+        }else {
+            console.log('Matched d_names')
+            console.log(match)
+        }
 }
-
-
-
-
-
-
-
 
 
 
